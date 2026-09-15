@@ -38,9 +38,47 @@ app.post("/students", async (req, res) => {
     .collection(meriCollection)
     .insertOne(student); 
 
-    res.json(student);
+    res.json(result);
     
 })
+
+app.put("/students/:id", async (req, res) => {
+    const db = meraConnection.db(dbName);
+
+    const id = req.params.id;
+
+    const updatedData = req.body;
+
+    const result = await db 
+    .collection(meriCollection)
+    .updateOne(
+        {
+            _id: new ObjectId(id)
+        }, 
+        {
+            $set: updatedData
+        }
+    ); 
+
+    res.json(result);
+    
+})
+
+app.delete("/students/:id", async (req, res) => {
+    const db = meraConnection.db(dbName);
+
+    const id = req.params.id;
+
+    const result = await db 
+    .collection(meriCollection)
+    .deleteOne({
+        _id: new ObjectId(id)
+    }); 
+
+    res.json(result);
+    
+})
+
 
 connectDB();
 
