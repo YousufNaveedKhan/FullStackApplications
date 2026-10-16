@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #f4f6fb;
+    color: #17202e;
+}
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.topbar h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.who {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e1e6ef;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.login {
+    max-width: 380px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.login h2 {
+    margin: 0;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+input,
+select {
+    padding: 10px 12px;
+    border: 1px solid #c9d1e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+button {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 8px;
+    background: #2358e6;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button.secondary {
+    background: #eef1f8;
+    color: #17202e;
+}
+
+button.danger {
+    background: #c62828;
+}
+
+.search {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.search input {
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px 8px;
+    border-bottom: 1px solid #edf0f6;
+    font-size: 0.95rem;
+}
+
+th {
+    color: #55627a;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.actions {
+    display: flex;
+    gap: 6px;
+}
+
+.pager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    font-size: 0.9rem;
+}
+
+.error {
+    color: #c62828;
+    margin: 0;
+}
+
+.muted {
+    color: #55627a;
+}
+
+.form-grid {
+    display: grid;
+    gap: 14px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.row h2 {
+    margin: 0;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #2358e6;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
